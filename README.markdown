@@ -6,8 +6,6 @@ Una aplicación Flutter para registrar, ver, editar y eliminar libros favoritos,
 - **Interfaz Intuitiva**: Botón centrado "Agrega tu libro" y tarjetas visuales para cada libro.
 - **Operaciones CRUD**: Agrega, lista, edita y elimina libros.
 - **Diseño MVC**: Separación clara entre Modelo (`libro_model.dart`), Vista (`libro_view.dart`) y Controlador (`libro_controller.dart`).
-- **Widgets en Español**: Incluye `CampoDeTexto`, `TarjetaLibro`, y `BotonTexto` para una experiencia localizada.
-- **UX/UI Mejorada**: Mensaje amigable para lista vacía, bordes redondeados, sombras y colores consistentes.
 
 ## Requisitos
 - Flutter SDK: `>=2.12.0 <3.0.0`
