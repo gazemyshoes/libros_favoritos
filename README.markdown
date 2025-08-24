@@ -1,11 +1,11 @@
 # App de Registro de Libros Favoritos
 
-Una aplicación Flutter para registrar, ver, editar y eliminar libros favoritos, diseñada con una interfaz amigable y el patrón MVC. Utiliza una base de datos en memoria para pruebas rápidas en Flutter Web (Chrome).
+Una aplicación Flutter para registrar, ver, editar y eliminar libros favoritos, diseñada con una interfaz amigable y el patrón MVC. Utiliza una base de datos en memoria para pruebas rápidas en Flutter Web.
 
 ## Características
 - **Interfaz Intuitiva**: Botón centrado "Agrega tu libro" y tarjetas visuales para cada libro.
 - **Operaciones CRUD**: Agrega, lista, edita y elimina libros.
-- **Diseño MVC**: Separación clara entre Modelo (`libro_model.dart`), Vista (`libro_vista.dart`) y Controlador (`libro_controller.dart`).
+- **Diseño MVC**: Separación clara entre Modelo (`libro_model.dart`), Vista (`libro_view.dart`) y Controlador (`libro_controller.dart`).
 - **Widgets en Español**: Incluye `CampoDeTexto`, `TarjetaLibro`, y `BotonTexto` para una experiencia localizada.
 - **UX/UI Mejorada**: Mensaje amigable para lista vacía, bordes redondeados, sombras y colores consistentes.
 
@@ -25,19 +25,19 @@ Una aplicación Flutter para registrar, ver, editar y eliminar libros favoritos,
    ```bash
    flutter pub get
    ```
-3. Ejecuta la app en Chrome:
+3. Ejecuta la app:
    ```bash
-   flutter run -d chrome
+   flutter run
    ```
 
 ## Estructura del Proyecto
 - **`main.dart`**: Punto de entrada, configura la app y lanza `VistaLibros`.
 - **`libro_model.dart`**: Modelo, gestiona datos en memoria (lista de libros) y operaciones CRUD.
 - **`libro_controller.dart`**: Controlador, conecta el modelo con la vista.
-- **`libro_vista.dart`**: Vista, muestra la interfaz con un botón centrado "Agrega tu libro" y tarjetas de libros.
+- **`libro_view.dart`**: Vista, muestra la interfaz con un botón centrado "Agrega tu libro" y tarjetas de libros.
 
 ## Uso
-1. Abre la app en Chrome (`flutter run -d chrome`).
+1. Abre la app(`flutter run`).
 2. Haz clic en "Agrega tu libro" para abrir un formulario.
 3. Completa los campos (título, autor, género, calificación, reseña) y guarda.
 4. Edita o elimina libros desde las tarjetas.
